@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>TP1 - Application</title>
 </head>
 <body>
@@ -14,14 +15,16 @@
     <header>
         <section></section>
     </header>
-        <nav>
-            <ul>
-                <li><a>Henlo 1</a></li>
-                <li><a>Henlo 2</a></li>
-                <li><a>Henlo 3</a></li>
-                <li><a>Henlo 4</a></li>
-            </ul>
-        </nav>
+    <nav class="menu">
+        <input id="checkMenu" type="checkbox">
+        <label id="btnMenu" for="checkMenu">&#9776;</label>
+        <ul class="listeMenu">
+            <li class="choixMenu"><a>Accueil</a></li>
+            <li class="choixMenu"><a>Produits</a></li>
+            <li class="choixMenu"><a>À propos</a></li>
+            <li class="choixMenu"><a>Contacter</a></li>
+        </ul>
+    </nav>
         <main>
             <section class="mon-slider">
                 <div class="slider">
@@ -48,6 +51,13 @@
                     <a href="#slide-4">4</a>
                     <a href="#slide-5">5</a>
                 </div>
+            <section class="sectionImg">
+                <div><img  class="img_fraise" src="img/macarons_fraise_cafe.jpg"></div>
+                 <div><img class="img_bleuet" src="img/macarons_bleuets.jpg"></div>
+                <div><img  class="img_canelle" src="img/macarons_canelle.jpg"></div>
+                <div><img class="img_erable" src="img/macarons_erable.jpg"></div>
+                <div><img class="img_noixCoco" src="img/macarons_noix_coco.jfif"></div>
+                <div><img class="img_limeChoco" src="img/macarons_lime_choco.jpg"></div>
             </section>
         </main>
 
