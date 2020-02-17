@@ -1,0 +1,14 @@
+@keyframes animLivraison{
+    from {
+        left:100%;
+    }
+    to{
+        left:0;
+    }
+}
+
+.animLivraison {
+    animation : animLivraison 5s;
+    animation-iteration-count: infinite;
+
+}

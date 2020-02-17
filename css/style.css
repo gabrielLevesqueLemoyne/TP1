@@ -382,6 +382,7 @@ header {
   vertical-align: center;
   line-height: 200%;
   margin: 0;
+  z-index: -10;
 }
 
 /* ------------------------------------------------------------
@@ -636,5 +637,50 @@ img {
 .animEntete {
   -webkit-animation: animEntete 1s;
           animation: animEntete 1s;
+}
+
+/*----------------------------------------------------------------
+# Livraison
+--------------------------------------------------------------*/
+.livraison {
+  height: calc(80px + 4vw);
+  background-color: #FFE1E6;
+  margin: 0 auto;
+  overflow-x: hidden;
+  z-index: -20;
+}
+
+#icon_truck {
+  font-size: 7rem;
+  z-index: 0;
+  position: absolute;
+  color: pink;
+}
+
+/*----------------------------------------------------------------
+# Livraison Anim
+--------------------------------------------------------------*/
+@-webkit-keyframes animLivraison {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes animLivraison {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.animLivraison {
+  -webkit-animation: animLivraison 5s;
+          animation: animLivraison 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=style.css.map */
