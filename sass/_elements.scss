@@ -1,0 +1,21 @@
+.sectionImg{
+
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 250px 200px; 
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+}
+
+img {
+     height: auto;
+    object-fit: fill;
+      width: 10em;
+   
+}
+
+.sectionImg div{
+    border-radius: 2px solid black;
+    z-index: 20;
+  
+}
