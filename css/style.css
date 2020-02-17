@@ -661,18 +661,26 @@ img {
 # Livraison Anim
 --------------------------------------------------------------*/
 @-webkit-keyframes animLivraison {
-  from {
+  0% {
     left: 100%;
   }
-  to {
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
     left: 0;
   }
 }
 @keyframes animLivraison {
-  from {
+  0% {
     left: 100%;
   }
-  to {
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
     left: 0;
   }
 }
