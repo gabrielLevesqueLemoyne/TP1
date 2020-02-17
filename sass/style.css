@@ -369,19 +369,8 @@ template {
 /*--------------------------------------------------------------
 # Entete
 ----------------------------------------------------------------*/
-header {
-  height: calc(80px + 4vw);
-  background-color: #FFE1E6;
-  margin: 0 auto;
-}
-
 .titre {
-  color: palevioletred;
-  font-size: calc(1.5rem + 3vw);
-  text-align: center;
-  vertical-align: center;
-  line-height: 200%;
-  margin: 0;
+  background-color: blue;
 }
 
 /* ------------------------------------------------------------
@@ -405,14 +394,6 @@ header {
 ----------------------------------------------------------------*/
 /*Font pour le texte*/
 /*Font pour les titres*/
-body {
-  font-family: 'Playfair Display', serif;
-}
-
-h1 {
-  font-family: 'Playfair Display SC', serif;
-}
-
 /*----------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
@@ -429,8 +410,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#74ABE2), to(#5563DE));
-  background: linear-gradient(to bottom, #74ABE2, #5563DE);
   font-family: 'Ropa Sans', sans-serif;
   overflow: hidden;
   width: 100%;
