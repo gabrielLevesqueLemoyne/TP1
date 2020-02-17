@@ -604,4 +604,37 @@ img {
   font-family: 'Ropa Sans', sans-serif;
   overflow: hidden;
 }
+
+/*----------------------------------------------------------------
+# Anim_entete
+--------------------------------------------------------------*/
+@-webkit-keyframes animEntete {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes animEntete {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.animEntete {
+  -webkit-animation: animEntete 1s;
+          animation: animEntete 1s;
+}
 /*# sourceMappingURL=style.css.map */
