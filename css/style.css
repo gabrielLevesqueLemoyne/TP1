@@ -15,17 +15,6 @@ License: GNU General Public License v2 or later
 # Menu
 # Pied-page
 */
-
- /*--------------------------------------------------------------
-# Typography 
-----------------------------------------------------------------*/
-/*Font pour le texte*/
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
-
-/*Font pour les titres*/
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap");
-
-
 /*----------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -36,6 +25,8 @@ License: GNU General Public License v2 or later
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -387,9 +378,18 @@ template {
 /* ------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
+.choixMenu {
+  font-size: 3rem;
+}
+
 /*--------------------------------------------------------------
 # Pied-page 
 ----------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Typography 
+----------------------------------------------------------------*/
+/*Font pour le texte*/
+/*Font pour les titres*/
 /*----------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
