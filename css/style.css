@@ -392,6 +392,22 @@ img {
 /*--------------------------------------------------------------
 # Entete
 ----------------------------------------------------------------*/
+header {
+  height: calc(80px + 4vw);
+  background-color: #FFE1E6;
+  margin: 0 auto;
+}
+
+.titre {
+  color: palevioletred;
+  font-size: calc(1.5rem + 3vw);
+  text-align: center;
+  vertical-align: center;
+  line-height: 200%;
+  margin: 0;
+  z-index: -10;
+}
+
 /* ------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -403,7 +419,7 @@ img {
 --------------------------------------------------------------*/
 .menu {
   width: 100%;
-  height: 100%;
+  height: 0px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -418,6 +434,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  z-index: 20;
 }
 
 .listeMenu {
@@ -446,6 +463,14 @@ img {
 #checkMenu:checked ~ #btnMenu {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  -webkit-transition-property: ease-in-out transform;
+  transition-property: ease-in-out transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+#checkMenu:checked ~ #btnMenu {
+  height: 100%;
   -webkit-transition-property: ease-in-out transform;
   transition-property: ease-in-out transform;
   -webkit-transition-duration: 1s;
@@ -696,5 +721,91 @@ img {
   background: linear-gradient(to bottom, #74ABE2, #5563DE);
   font-family: 'Ropa Sans', sans-serif;
   overflow: hidden;
+}
+
+/*----------------------------------------------------------------
+# Anim_entete
+--------------------------------------------------------------*/
+@-webkit-keyframes animEntete {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes animEntete {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.animEntete {
+  -webkit-animation: animEntete 1s;
+          animation: animEntete 1s;
+}
+
+/*----------------------------------------------------------------
+# Livraison
+--------------------------------------------------------------*/
+.livraison {
+  height: calc(80px + 4vw);
+  background-color: #FFE1E6;
+  margin: 0 auto;
+  overflow-x: hidden;
+  z-index: -20;
+}
+
+#icon_truck {
+  font-size: 7rem;
+  z-index: 0;
+  position: absolute;
+  color: pink;
+}
+
+/*----------------------------------------------------------------
+# Livraison Anim
+--------------------------------------------------------------*/
+@-webkit-keyframes animLivraison {
+  0% {
+    left: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    left: 0;
+  }
+}
+@keyframes animLivraison {
+  0% {
+    left: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    left: 0;
+  }
+}
+
+.animLivraison {
+  -webkit-animation: animLivraison 5s;
+          animation: animLivraison 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=style.css.map */

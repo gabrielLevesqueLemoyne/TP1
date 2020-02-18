@@ -1,0 +1,17 @@
+
+header{
+    height: calc(80px + 4vw);
+    background-color:#FFE1E6;
+    margin: 0 auto;
+}
+
+.titre{
+    color: palevioletred;
+    font-size: calc(1.5rem + 3vw);
+    text-align: center;
+    vertical-align: center;
+    line-height: 200%;
+    margin: 0;
+    z-index: -10;
+}
+
